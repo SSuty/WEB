@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+.menu {
+background-color:powderblue;  
+float:left;
+width: 20%;
+text-align:center;
+}
+
+.main {
+float:left;
+width: 60%;
+overflow:hidden;
+
+}
+.right {
+float:right;
+width: 20%;
+align:right;
+}
+
+h1, footer {
+    padding: 1em;
+    color: white;
+    background-color: indigo;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 1;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.2em;
+}
+   
+nav ul a {
+    text-decoration: none;
+    color: indigo;
+    background-color: white;
+}
+
+article {
+	min-width: 20%;
+    margin-left: 10px;
+    max-width: 100%;
+    border-left: 5px solid red;
+    border-right:5px solid red;
+    padding: 0.5em;
+    overflow: hidden;
+    background-color:yellow;
+}
+</style>
+</head>
+
+<body style="background-color:powderblue; height:100%">
+<h1 > <a href="index.html" style="color:white; text-decoration: none">Skialpinizmus</a></h1>
+
+<nav>
+        <ul>
+          <li><p>Fotky:</p></li>
+          <li><a href="skialp.html">Skialpinizmus</a>	</li> 
+        </ul>
+      </nav>
+
+
+<article>
+<h1 style="text-align:left" >Niečo o mne</h1>
+<p>Mám 23 rokov, študujem štvrtý rok na FMFI UK odbor Biomedicínska fyzika. K mojím záľubám patrí hudba, šport a kaligrafia. Nedávno som prvý krát skúsil skialpinizmu a preto som tomuto športu venoval jednu časť mojej prvej webovej stránky. </p>
+<img src="http://horsky-vodca.com/wp-content/uploads/2014/04/skialpinizmus.jpg" style="width:100%;">
+
+
+
+
+<p style="color:red">Túto stránku som vytvoril ako  úlohu na predmet Aplikačné programy v biofyzike</p>
+
+
+
+<p>Stránku som sa snažil spraviť tak aby bol dynamická a schopná zobrazenia na bežnom PC alebo aj na mobile či tablete</p>
+</article>
+</body>
+<footer>
+        <div style="text-align:center" id="date"></div>
+    
+        <script>
+        var date = new Date()
+        document.getElementById("date").innerHTML = date;
+        </script> 
+    
+</footer>
+</html>

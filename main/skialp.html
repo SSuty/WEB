@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+.menu {
+background-color:powderblue;  
+float:left;
+width: 20%;
+text-align:center;
+}
+
+.main {
+float:left;
+width: 60%;
+overflow:hidden;
+
+}
+.right {
+float:right;
+width: 20%;
+align:right;
+}
+
+h1, footer {
+    padding: 1em;
+    color: white;
+    background-color: indigo;
+    clear: left;
+    text-align: center;
+
+
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 1;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.1em;
+}
+   
+nav ul a {
+    text-decoration: none;
+    color: indigo;
+    background-color: white;
+}
+
+article {
+	min-width: 20%;
+    margin-left: 10px;
+    max-width: 100%;
+    border-left: 5px solid red;
+    border-right:5px solid red;
+    padding: 0.5em;
+    overflow: hidden;
+    background-color:yellow;
+}
+.box {
+	min-width: 20%;
+    margin-left: 10px;
+    max-width: 85%;
+    padding: 0.5em;
+    overflow: hidden;
+}
+.datumF{
+    text-align:center;
+}
+.foto{
+float:left;
+max-height: 250px;
+margin-left: 10px;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+</style>
+</head>
+
+<body style="background-color:powderblue;  height:100%">
+<h1 > <a href="skialp.html" style="color:white; text-decoration: none">Fotky</a></h1>
+
+<nav>
+  <ul>
+    
+    <li><a href="index.html">Domov</a>	</li> 
+  </ul>
+</nav>
+
+
+<div class="box">  
+     <img src="ski1.jpg" class="foto">
+     <img src="ski2.jpg" class="foto">
+     <img src="ski3.jpg" class="foto">
+
+
+
+     <p style="float:left; width:100%">Pre viac info o skialpe kliknite <a href="https://skialp.hiking.sk/">TU.</a></p> 
+</div>
+
+
+
+
+
+
+</body>
+<footer>
+   <div>
+        <div  class="datumF" id="date"></div>
+    
+                <button onclick="HRUBE()"><b>Bold</b></button>
+         
+                <script>
+                        function HRUBE() {
+                          var x = document.getElementsByClassName("datumF");
+                          for (var i = 0; i < x.length; i++) {
+                            x[i].style.fontWeight = "bold";
+                          }
+                        }
+                </script>
+
+<button onclick="Normal()">Reset</button>
+         
+                <script>
+                        function Normal() {
+                          var x = document.getElementsByClassName("datumF");
+                          for (var i = 0; i < x.length; i++) {
+                            x[i].style.fontWeight = "normal";
+                          }
+                        }
+                </script>
+
+
+
+        <script>
+        var date = new Date()
+        document.getElementById("date").innerHTML = date;
+        </script> 
+  </div>  
+</footer>
+</html>
