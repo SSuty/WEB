@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 div.container {
     width: 100%;
@@ -24,7 +24,6 @@ overflow:hidden;
 .right {
 float:right;
 width: 20%;
-align:right;
 }
 
 h1, footer {
@@ -107,43 +106,39 @@ margin-right: 10px;
 </div>
 
 
-
-
-
-
-</body>
 <footer>
-   <div>
-        <div  class="datumF" id="date"></div>
-    
-                <button onclick="HRUBE()"><b>Bold</b></button>
+        <div>
+             <div  class="datumF" id="date"></div>
          
-                <script>
-                        function HRUBE() {
-                          var x = document.getElementsByClassName("datumF");
-                          for (var i = 0; i < x.length; i++) {
-                            x[i].style.fontWeight = "bold";
-                          }
-                        }
-                </script>
-
-<button onclick="Normal()">Reset</button>
-         
-                <script>
-                        function Normal() {
-                          var x = document.getElementsByClassName("datumF");
-                          for (var i = 0; i < x.length; i++) {
-                            x[i].style.fontWeight = "normal";
-                          }
-                        }
-                </script>
-
-
-
-        <script>
-        var date = new Date()
-        document.getElementById("date").innerHTML = date;
-        </script> 
-  </div>  
-</footer>
+                     <button onclick="HRUBE()"><b>Bold</b></button>
+              
+                     <script>
+                             function HRUBE() {
+                               var x = document.getElementsByClassName("datumF");
+                               for (var i = 0; i < x.length; i++) {
+                                 x[i].style.fontWeight = "bold";
+                               }
+                             }
+                     </script>
+     
+     <button onclick="Normal()">Reset</button>
+              
+                     <script>
+                             function Normal() {
+                               var x = document.getElementsByClassName("datumF");
+                               for (var i = 0; i < x.length; i++) {
+                                 x[i].style.fontWeight = "normal";
+                               }
+                             }
+                     </script>
+     
+     
+     
+             <script>
+             var date = new Date()
+             document.getElementById("date").innerHTML = date;
+             </script> 
+       </div>  
+     </footer>
+</body>
 </html>
